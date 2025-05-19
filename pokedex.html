@@ -3,22 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokédex</title>
+    <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: linear-gradient(to bottom, red, yellow);
+            font-family: 'Courier New', Courier, monospace;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            color: black;
+            padding: 20px;
+        }
+        .container{
+            background-color: white;
+            border: 3px solid black;
+            padding: 30px;
+            width: 300px;
+            text-align: center;
+            position: relative;
+            font-size: 16px;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 0 20px ;
+        }
+
+        .container h1{
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .imagem-pokemon{
+            width: 150px;
+            height: 150px;
+            margin-bottom: 15px;
+            border-radius: 15px;
+            object-fit: contain;
+            box-shadow: 0 4px 12px rgba(0,0, 0, 0.6);
+        }
+
+    </style>
 </head>
 <body>
-    <div class="container" >
-        <h1>Pokédex</h1>
-        <img class="imagem-pokemon"src="http://viaplaceholder.com/150" alt="imagem do pokemon" id="imagem">
-        <div class="info-pokemon">
-            <p><strong>Nome:</strong> <span id="nome">__________________________</span></p>
-            <p><strong>Número:</strong> <span id="tipos">__________________________</span></p>
-            <p><strong>Tipo:</strong> <span id="tipos">__________________________</span></p>
-        </div>
-        <div class = "area-busca">
-            <input type="text" id="entrada" placeholder="Informe seu nome ou número">
-            <button id="button-buscar">Buscar</button>
-        </div>
-    </div>
+    <!-- Cartão principal da Pokedex -->
+     <div class="container">
+        <h1>PokéDex</h1>
+        <!-- Imagme do Pokemon -->
+         <img class="imagem-pokemon" src="https://via.placeholder.com/150" alt="Imagem do pokemon" id="imagem">
+
+        <!-- Area com os dados do Pokemon -->
+         <div class="info-pokemon">
+            <p><strong>Nome:</strong> <span id ="nome">---</span></p>
+            <p><strong>Número:</strong> <span id ="numero">---</span></p>
+            <p><strong>Tipo:</strong> <span id ="tipo">---</span></p>
+         </div>
+
+         <!-- campo para digitar nome ou numero -->
+          <div class="area-busca">
+            <input type="text" id="entrada" placeholder="Informe o Nome ou Número">
+            <button id="bota-buscar">Buscar</button>
+          </div>
+
+     </div>
+    
 </body>
 </html>
