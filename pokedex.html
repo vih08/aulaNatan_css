@@ -12,7 +12,7 @@
             box-sizing: border-box;
         }
         body{
-            background: linear-gradient(to bottom, red, yellow);
+            background: linear-gradient(to bottom, #ef476f, #ffd166);
             font-family: 'Courier New', Courier, monospace;
             height: 100vh;
             display: flex;
@@ -45,9 +45,58 @@
             width: 150px;
             height: 150px;
             margin-bottom: 15px;
-            border-radius: 15px;
+            border-radius: 50%;
             object-fit: contain;
             box-shadow: 0 4px 12px rgba(0,0, 0, 0.6);
+        }
+
+        .info-pokemon{
+            font-size: 18px;
+            color: #333;
+        }
+
+        .info-pokemon p{
+            margin: 6px 0;
+
+        }
+
+        .fita-tipo{
+            display: inline-block;
+            background-color: aqua;
+            padding: 5px 12px;
+            font-size: 12px;
+            border-radius: 12px;
+            margin-top: 8px;
+        }
+
+        .area-buscaarea-busca{
+            margin-top: 20px;
+        }
+
+        .area-busca input{
+            padding:8px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            width: 80%;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .area-busca button {
+            padding: 8px 16px;
+            background-color: rgb(101, 187, 187);
+            color: #ffffff;
+            border:none;
+            border-radius:8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: backgroud-color 0.3s ease, transform 0.3s ease;
+
+        }
+
+        .area-busca button:hover{
+            background-color: rgb(85, 163, 137);
+            transform: scale(1.1);
         }
 
     </style>
@@ -73,6 +122,6 @@
           </div>
 
      </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>
